@@ -142,7 +142,7 @@ class Twenty_Twenty_One_Dark_Mode {
 
 		$colors_section = $wp_customize->get_section( 'colors' );
 		if ( is_object( $colors_section ) ) {
-			$colors_section->title = __( 'Colors & Dark Mode', 'twentytwentyone' );
+			$colors_section->title = __( 'Color', 'twentytwentyone' );
 		}
 
 		// Custom notice control.
@@ -191,7 +191,7 @@ class Twenty_Twenty_One_Dark_Mode {
 		$description .= '</p>';
 		$description .= '<p>' . __( 'Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page.', 'twentytwentyone' ) . '</p>';
 
-		$wp_customize->add_control(
+		/*$wp_customize->add_control(
 			'respect_user_color_preference',
 			array(
 				'type'            => 'checkbox',
@@ -203,7 +203,7 @@ class Twenty_Twenty_One_Dark_Mode {
 					return 127 < Twenty_Twenty_One_Custom_Colors::get_relative_luminance_from_hex( get_theme_mod( 'background_color', 'D1E4DD' ) );
 				},
 			)
-		);
+		);*/
 
 		// Add partial for background_color.
 		$wp_customize->selective_refresh->add_partial(

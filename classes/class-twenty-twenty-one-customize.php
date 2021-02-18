@@ -151,19 +151,20 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 
 			$wp_customize->add_setting(
 				'accent_color', array(
-					'default' => 'accent_color',
-					'type' => 'option', 
-					'capability' =>  'edit_theme_options'
+					'default' => '000000',
+					'transport' =>  'refresh'
 				)
 			);
 
 			$wp_customize->add_control(
-				new WP_Customize_Color_Control(
+				new Twenty_Twenty_One_Customize_Color_Control(
 					$wp_customize,
-					'accent_color', 
-					array('label' => 'accent_color', 
-					'section' => 'colors',
-					'settings' => 'accent_color')
+					'accent_color',
+					array(
+						'label'   => esc_html_x( 'Accent color', 'Customizer control', 'twentytwentyone' ),
+						'section' => 'colors',
+						'palette' => $colors,
+					)
 				)
 			);
 

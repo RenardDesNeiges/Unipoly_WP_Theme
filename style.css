@@ -3842,7 +3842,7 @@ table.wp-calendar-table caption {
 }
 
 .header_background {
-	background-color: red;
+	background-color: var(--accent--color);
 }
 
 .wp-custom-logo .site-header {
@@ -3932,7 +3932,7 @@ a.custom-logo-link {
 }
 
 .site-logo {
-	margin: calc(var(--global--spacing-vertical) / 2) 0;
+	margin: 0;
 }
 
 .site-header > .site-logo {
