@@ -134,6 +134,8 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 				}
 			}
 
+			
+
 			// Add the control. Overrides the default background-color control.
 			$wp_customize->add_control(
 				new Twenty_Twenty_One_Customize_Color_Control(
@@ -146,6 +148,26 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 					)
 				)
 			);
+
+			$wp_customize->add_setting(
+				'accent_color', array(
+					'default' => 'accent_color',
+					'type' => 'option', 
+					'capability' =>  'edit_theme_options'
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Color_Control(
+					$wp_customize,
+					'accent_color', 
+					array('label' => 'accent_color', 
+					'section' => 'colors',
+					'settings' => 'accent_color')
+				)
+			);
+
+			
 		}
 
 		/**

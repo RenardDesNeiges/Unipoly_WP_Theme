@@ -869,7 +869,7 @@ template {
 @media only screen and (min-width: 482px) {
 
 	.site-header {
-		padding-bottom: calc(3 * var(--global--spacing-vertical));
+		padding-bottom: calc(1 * var(--global--spacing-vertical));
 	}
 }
 
@@ -3835,11 +3835,14 @@ table.wp-calendar-table caption {
 
 /* Category 06 contains all "bigger" components which contain elements of the previous two categories like header, footer, page template, single template, comments section, archives, ... */
 .site-header {
-	background-color: red;
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
 	row-gap: var(--global--spacing-vertical);
+}
+
+.header_background {
+	background-color: red;
 }
 
 .wp-custom-logo .site-header {
@@ -3854,7 +3857,7 @@ table.wp-calendar-table caption {
 @media only screen and (min-width: 822px) {
 
 	.site-header {
-		padding-top: calc(2.4 * var(--global--spacing-vertical));
+		padding-top: calc(var(--global--spacing-vertical));
 	}
 }
 

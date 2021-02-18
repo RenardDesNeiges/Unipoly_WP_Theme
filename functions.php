@@ -199,6 +199,8 @@ if ( ! function_exists( 'twenty_twenty_one_setup' ) ) {
 			)
 		);
 
+		
+
 		// Editor color palette.
 		$black     = '#000000';
 		$dark_gray = '#28303D';
