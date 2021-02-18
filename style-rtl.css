@@ -223,10 +223,10 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 	--button--padding-horizontal: calc(2 * var(--button--padding-vertical));
 
 	/* entry */
-	--entry-header--color: var(--global--color-primary);
-	--entry-header--color-link: currentColor;
-	--entry-header--color-hover: var(--global--color-primary-hover);
-	--entry-header--color-focus: var(--global--color-secondary);
+	--entry-header--color: #f8f7ee;
+	--entry-header--color-link: var(--entry-header--color);
+	--entry-header--color-hover: var(--entry-header--color);
+	--entry-header--color-focus: var(--entry-header--color);
 	--entry-header--font-size: var(--heading--font-size-h2);
 	--entry-content--font-family: var(--global--font-secondary);
 	--entry-author-bio--font-family: var(--heading--font-family);
@@ -261,9 +261,9 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 	--primary-nav--font-style-sub-menu-mobile: normal;
 	--primary-nav--font-weight: normal;
 	--primary-nav--font-weight-button: 500;
-	--primary-nav--color-link: var(--global--color-primary);
-	--primary-nav--color-link-hover: var(--global--color-primary-hover);
-	--primary-nav--color-text: var(--global--color-primary);
+	--primary-nav--color-link: var(--entry-header--color);
+	--primary-nav--color-link-hover: var(--entry-header--color);
+	--primary-nav--color-text: var(--entry-header--color);
 	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit));
 	--primary-nav--border-color: var(--global--color-primary);
 

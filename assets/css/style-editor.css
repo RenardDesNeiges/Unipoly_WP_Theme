@@ -168,11 +168,11 @@
 	--primary-nav--font-style-sub-menu-mobile: normal;
 	--primary-nav--font-weight: normal;
 	--primary-nav--font-weight-button: 500;
-	--primary-nav--color-link: var(--global--color-primary);
-	--primary-nav--color-link-hover: var(--global--color-primary-hover);
-	--primary-nav--color-text: var(--global--color-primary);
+	--primary-nav--color-link: #fcf8f3;
+	--primary-nav--color-link-hover: var(--primary-nav--color-link);
+	--primary-nav--color-text: var(--primary-nav--color-link);
 	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit));
-	--primary-nav--border-color: var(--global--color-primary);
+	--primary-nav--border-color: var(--primary-nav--color-link);
 
 	/* Pagination */
 	--pagination--color-text: var(--global--color-primary);
